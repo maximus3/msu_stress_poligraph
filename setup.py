@@ -43,10 +43,13 @@ def install_uv() -> bool:
         print("Установка UV для Windows...")
         # Попробуем через pip как самый универсальный способ
         if not run_command(
-            'powershell -c "irm https://astral.sh/uv/install.ps1 | iex"', check=False
+            'powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"',
+            check=False,
         ):
             print("Не удалось установить через pip. Попробуйте вручную:")
-            print('powershell -c "irm https://astral.sh/uv/install.ps1 | iex"')
+            print(
+                'powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"'
+            )
             return False
     else:
         print("Установка UV для macOS/Linux...")

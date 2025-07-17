@@ -1,0 +1,10 @@
+.env
+*.txt
+*.bdf
+*.png
+*.npy
+*.xlsx
+
+data/*
+!data/README.md
+!data/result/README.md
