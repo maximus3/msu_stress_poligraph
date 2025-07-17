@@ -127,3 +127,4 @@ venv.bak/
 data/*
 !data/README.md
 !data/result/README.md
+!data/raw/README.md

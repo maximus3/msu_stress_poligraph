@@ -150,7 +150,7 @@ def process_file(file_path, log_path):
 def main():
     # Настройки путей
     data_dir = pathlib.Path("data/result/")
-    log_dir = pathlib.Path("data/")
+    log_dir = pathlib.Path("data/raw/")
 
     # Сбор и обработка файлов
     all_results = []

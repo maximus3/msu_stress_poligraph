@@ -6,7 +6,7 @@ import pathlib
 import math
 
 # Пути и настройки
-path_bdf = pathlib.Path("data/")
+path_bdf = pathlib.Path("data/raw/")
 path_to_save = pathlib.Path("data/result/")
 samp_freq = 100  # Целевая частота дискретизации
 
