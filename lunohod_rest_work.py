@@ -2,7 +2,6 @@ import pathlib
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import neurokit2 as nk
 from scipy.signal import find_peaks
 from scipy.stats import skew, kurtosis
 
